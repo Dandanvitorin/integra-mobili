@@ -1,0 +1,211 @@
+/* Estilo customizado */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #e60a0a;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+#hero {
+    background: url('../images/image_teste.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
+    align-items: flex-start;    /* Alinha o conteúdo na parte superior */
+    padding-top: 50px; /* Ajusta a distância do topo */
+    padding-left: 20px; 
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.section-bg {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.product-item, .gallery-item, .team-member {
+    margin-bottom: 30px;
+}
+
+.custom-button {
+    background-color: #e60a0a; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: 2px solid #000; /* Cor da borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para hover */
+}
+
+.custom-button:hover {
+    background-color: #7e0303; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    border-color: #fff; /* Cor da borda ao passar o mouse */
+}
+
+
+.large-font {
+    font-size: 22px;
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+.footer {
+    padding: 60px 0;
+    background-color: #e60a0a;
+    color: #f8f9fa;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.footer .footer-contact p {
+    margin: 0;
+}
+
+.footer .footer-contact strong {
+    font-weight: bold;
+}
+
+.footer .social-links a {
+    font-size: 20px;
+    color: #f8f9fa;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+.footer .footer-links {
+    margin-top: 30px;
+}
+
+.footer .footer-links h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #f8f9fa;
+}
+
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-links ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer .footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-newsletter {
+    margin-top: 30px;
+}
+
+.footer .footer-newsletter h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #f8f9fa;
+}
+
+.footer .newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer .newsletter-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .newsletter-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.footer .copyright {
+    padding: 20px 0;
+    background-color: #7e0303;
+    color: #f8f9fa;
+}
+
+.team-member {
+    background-color: #fff; /* Cor de fundo do card */
+    border: 1px solid #ddd; /* Borda leve ao redor do card */
+    border-radius: 8px; /* Bordas arredondadas do card */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o card */
+    transition: transform 0.3s ease; /* Efeito de transição para o hover */
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Levantar o card ao passar o mouse */
+}
+
+.team-member-img {
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    width: 140px; /* Define a largura da imagem */
+    height: 140px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+}
+
+.btn-secondary {
+    margin-top: 15px; /* Espaçamento superior para o botão */
+}
