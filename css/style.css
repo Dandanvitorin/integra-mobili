@@ -1,12 +1,14 @@
 /* Estilo customizado */
 
+/* Fonte padrão */
 body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Navbar */
 .navbar {
     background-color: #202020;
-    padding: 1px;
+    padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
@@ -16,85 +18,126 @@ body {
 
 .navbar-nav .nav-link {
     color: #fff;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #e60a0a;
 }
 
-#hero {
-    background: url('../images/galery/imagens_final/1.png') no-repeat center center/cover;
+/* Hero Sections */
+#hero,
+#hero_nr,
+#hero_sus {
     background-size: cover;
-    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start; /* Alinha o conteúdo na parte superior */
     align-items: flex-start;    /* Alinha o conteúdo na parte superior */
-    padding-top: 50px; /* Ajusta a distância do topo */
-    padding-left: 20px; 
+    padding-top: 3rem; /* Ajusta a distância do topo */
+    padding-left: 1rem;
+    padding-right: 1rem; /* Evita conteúdo colado nas bordas */
+    text-align: left;
+    color: #fff;
+    min-height: 60vh; /* Permite que a seção se expanda conforme o conteúdo */
+    box-sizing: border-box; /* Inclui o padding no cálculo total da largura */
+}
+
+#hero {
+    background-image: url('../images/galery/imagens_final/1.png');
+    height: 120vh;
 }
 
 #hero_nr {
-    background: url('../images/galery/imagens_final/4.png') no-repeat center center/cover;
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
-    align-items: flex-start;    /* Alinha o conteúdo na parte superior */
-    padding-top: 50px; /* Ajusta a distância do topo */
-    padding-left: 20px; 
+    background-image: url('../images/galery/imagens_final/4.png');
 }
 
 #hero_sus {
-    background: url('../images/galery/imagens_final/5.png') no-repeat center center/cover;
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
-    align-items: flex-start;    /* Alinha o conteúdo na parte superior */
-    padding-top: 50px; /* Ajusta a distância do topo */
-    padding-left: 20px; 
+    background-image: url('../images/galery/imagens_final/5.png');
 }
 
-#hero h1 {
-    font-size: 4rem;
+
+#hero h1,
+#hero_nr h1,
+#hero_sus h1 {
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
-#hero h2 {
-    font-size: 1.75rem;
+#hero h2,
+#hero_nr p,
+#hero_sus p {
+    font-size: 1rem;
     color: #fff;
 }
 
-.section-bg {
-    background-color: #f8f9fa;
-    padding: 60px 0;
+@media (min-width: 768px) {
+    #hero h1,
+    #hero_nr h1,
+    #hero_sus h1 {
+        font-size: 4rem;
+    }
+
+    #hero h2,
+    #hero_nr p,
+    #hero_sus p {
+        font-size: 1.75rem;
+    }
 }
 
+/* Seções com fundo */
+.section-bg {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-bg {
+        padding: 4rem 2rem;
+    }
+}
+
+/* Títulos das Seções */
 .section-title h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
 }
 
 .section-title p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
 }
 
-.product-item, .gallery-item, .team-member {
-    margin-bottom: 30px;
+@media (min-width: 768px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title p {
+        font-size: 1.1rem;
+    }
 }
 
+/* Itens de Produto, Galeria e Time */
+.product-item, 
+.gallery-item, 
+.team-member {
+    margin-bottom: 1.875rem;
+}
+
+/* Botões Customizados */
 .custom-button {
     background-color: #e60a0a; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto */
     border: 2px solid #000; /* Cor da borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 16px; /* Tamanho da fonte */
+    padding: 0.625rem 1.25rem; /* Espaçamento interno */
+    border-radius: 0.3125rem; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para hover */
 }
@@ -105,21 +148,22 @@ body {
     border-color: #fff; /* Cor da borda ao passar o mouse */
 }
 
-
+/* Fonte de grande tamanho */
 .large-font {
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px */
     line-height: 1.5; /* Espaçamento entre linhas */
     color: #333; /* Cor do texto */
 }
 
+/* Footer */
 .footer {
-    padding: 60px 0;
+    padding: 3.75rem 1rem;
     background-color: #202020;
     color: #f8f9fa;
 }
 
 .footer .logo {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     font-weight: bold;
     color: #f8f9fa;
 }
@@ -133,9 +177,9 @@ body {
 }
 
 .footer .social-links a {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: #f8f9fa;
-    margin-right: 15px;
+    margin-right: 0.9375rem; /* 15px */
     transition: color 0.3s;
 }
 
@@ -144,12 +188,12 @@ body {
 }
 
 .footer .footer-links {
-    margin-top: 30px;
+    margin-top: 1.875rem; /* 30px */
 }
 
 .footer .footer-links h4 {
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1.125rem; /* 18px */
     color: #f8f9fa;
 }
 
@@ -159,7 +203,7 @@ body {
 }
 
 .footer .footer-links ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 .footer .footer-links ul li a {
@@ -172,31 +216,38 @@ body {
 }
 
 .footer .footer-newsletter {
-    margin-top: 30px;
+    margin-top: 1.875rem; /* 30px */
 }
 
 .footer .footer-newsletter h4 {
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1.125rem; /* 18px */
     color: #f8f9fa;
 }
 
 .footer .newsletter-form {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 0.625rem; /* 10px */
+}
+
+@media (min-width: 576px) {
+    .footer .newsletter-form {
+        flex-direction: row;
+    }
 }
 
 .footer .newsletter-form input[type="email"] {
     flex: 1;
-    padding: 10px;
+    padding: 0.625rem; /* 10px */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
 }
 
 .footer .newsletter-form input[type="submit"] {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
@@ -207,38 +258,52 @@ body {
 }
 
 .footer .copyright {
-    padding: 20px 0;
+    padding: 1.25rem 0; /* 20px */
     background-color: #202020;
     color: #f8f9fa;
+    text-align: center;
 }
 
+.footer .credits a {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+/* Membros da Equipe */
 .team-member {
     background-color: #fff; /* Cor de fundo do card */
     border: 1px solid #ddd; /* Borda leve ao redor do card */
-    border-radius: 8px; /* Bordas arredondadas do card */
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o card */
+    border-radius: 0.5rem; /* Bordas arredondadas do card */
+    padding: 1.25rem; /* Espaçamento interno */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra para destacar o card */
     transition: transform 0.3s ease; /* Efeito de transição para o hover */
 }
 
 .team-member:hover {
-    transform: translateY(-10px); /* Levantar o card ao passar o mouse */
+    transform: translateY(-0.625rem); /* Levantar o card ao passar o mouse */
 }
 
 .team-member-img {
     border-radius: 50%; /* Faz a imagem ficar redonda */
-    width: 140px; /* Define a largura da imagem */
-    height: 140px; /* Define a altura da imagem */
+    width: 8.75rem; /* 140px */
+    height: 8.75rem; /* 140px */
     object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    margin: 0 auto 1rem auto; /* Centraliza a imagem e adiciona margem inferior */
+    display: block;
 }
 
+/* Botão Secundário */
 .btn-secondary {
-    margin-top: 15px; /* Espaçamento superior para o botão */
+    margin-top: 0.9375rem; /* 15px */
 }
 
+/* Cards de Linhas de Móveis */
 .card {
     border: none;
     overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-image {
@@ -247,34 +312,131 @@ body {
 }
 
 .card-image img {
-    transition: 0.3s ease;
+    transition: 0.3s ease, transform 0.3s ease;
     width: 100%;
     height: auto;
 }
 
 .card-image:hover img {
     opacity: 0.7;
+    transform: scale(1.05);
 }
 
+/* Botão WhatsApp */
 .btn-whatsapp {
-    display: none;
+    display: none; /* Esconde o botão por padrão */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #25d366;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s ease;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: none; /* Garante que o botão esteja escondido */
 }
 
 .card-image:hover .btn-whatsapp {
-    display: block;
+    display: flex; /* Mostra o botão ao passar o mouse */
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-whatsapp i {
-    margin-right: 5px;
+    margin-right: 0.3125rem; /* 5px */
+}
+
+/* Galeria */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3125rem; /* 5px */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Ajustes para os botões do WhatsApp */
+.whatsapp-link {
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    /* Ajusta os hero sections para altura automática */
+    #hero,
+    #hero_nr,
+    #hero_sus {
+        height: auto;
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero h1,
+    #hero_nr h1,
+    #hero_sus h1 {
+        font-size: 2rem;
+    }
+
+    #hero h2,
+    #hero_nr p,
+    #hero_sus p {
+        font-size: 1rem;
+    }
+
+    /* Ajusta a newsletter form para colunas em telas menores */
+    .footer .newsletter-form {
+        flex-direction: column;
+    }
+
+    /* Ajusta o tamanho das imagens dos membros da equipe */
+    .team-member-img {
+        width: 6.25rem; /* 100px */
+        height: 6.25rem; /* 100px */
+    }
+
+    /* Ajusta os cards de linhas de móveis */
+    .btn-whatsapp {
+        position: static;
+        transform: none;
+        margin-top: 0.5rem;
+        display: flex; /* Mostra o botão sempre no mobile */
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .card-image:hover .btn-whatsapp {
+        display: flex; /* Garante que o botão esteja visível no mobile */
+    }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1200px) {
+    #hero h1,
+    #hero_nr h1,
+    #hero_sus h1 {
+        font-size: 5rem;
+    }
+
+    #hero h2,
+    #hero_nr p,
+    #hero_sus p {
+        font-size: 2rem;
+    }
+
+    .team-member-img {
+        width: 10rem; /* 160px */
+        height: 10rem; /* 160px */
+    }
 }
