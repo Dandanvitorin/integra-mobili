@@ -5,8 +5,8 @@ body {
 }
 
 .navbar {
-    background-color: #e60a0a;
-    padding: 10px 0;
+    background-color: #202020;
+    padding: 1px;
 }
 
 .navbar-brand {
@@ -19,10 +19,36 @@ body {
     padding: 10px 15px;
 }
 
+.nav-link:hover{
+    color: #e60a0a;
+}
+
 #hero {
-    background: url('../images/image_teste.jpeg') no-repeat center center/cover;
+    background: url('../images/galery/imagens_final/1.png') no-repeat center center/cover;
     background-size: cover;
     height: 120vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
+    align-items: flex-start;    /* Alinha o conteúdo na parte superior */
+    padding-top: 50px; /* Ajusta a distância do topo */
+    padding-left: 20px; 
+}
+
+#hero_nr {
+    background: url('../images/galery/imagens_final/4.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
+    align-items: flex-start;    /* Alinha o conteúdo na parte superior */
+    padding-top: 50px; /* Ajusta a distância do topo */
+    padding-left: 20px; 
+}
+
+#hero_sus {
+    background: url('../images/galery/imagens_final/5.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 80vh;
     display: flex;
     justify-content: flex-start; /* Alinha o conteúdo na parte superior */
     align-items: flex-start;    /* Alinha o conteúdo na parte superior */
@@ -88,7 +114,7 @@ body {
 
 .footer {
     padding: 60px 0;
-    background-color: #e60a0a;
+    background-color: #202020;
     color: #f8f9fa;
 }
 
@@ -182,7 +208,7 @@ body {
 
 .footer .copyright {
     padding: 20px 0;
-    background-color: #7e0303;
+    background-color: #202020;
     color: #f8f9fa;
 }
 
@@ -208,4 +234,47 @@ body {
 
 .btn-secondary {
     margin-top: 15px; /* Espaçamento superior para o botão */
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.card-image:hover img {
+    opacity: 0.7;
+}
+
+.btn-whatsapp {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.card-image:hover .btn-whatsapp {
+    display: block;
+}
+
+.btn-whatsapp i {
+    margin-right: 5px;
 }
